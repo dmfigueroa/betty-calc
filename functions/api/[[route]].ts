@@ -8,7 +8,7 @@ const route = app.basePath("api").get(
   "/currencies",
   cache({
     cacheName: "betty-currencies",
-    cacheControl: "max-age=600",
+    cacheControl: "max-age=86400",
   }),
   async (c) => {
     const conversionsResponse = await fetch(
