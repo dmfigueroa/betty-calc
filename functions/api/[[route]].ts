@@ -12,7 +12,7 @@ const route = app.basePath("api").get(
   }),
   async (c) => {
     const conversionsResponse = await fetch(
-      "https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/cop.json"
+      "https://currency-api.pages.dev/v1/currencies/cop.json"
     );
     const conversionsData = await conversionsResponse.json();
     const conversions = conversionsData.cop;
